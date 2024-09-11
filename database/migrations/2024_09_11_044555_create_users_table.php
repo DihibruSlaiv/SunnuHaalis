@@ -29,7 +29,7 @@ class CreateUsersTable extends Migration
             $table->softDeletes();
             $table->timestamps();
 
-            $table->foreign('location_id')->references('id')->on('location')
+            $table->foreign('location_id')->references('id')->on('locations')
             ->onDelete('cascade');
             $table->foreign('role_id')->references('id')->on('roles')
             ->onDelete('cascade');

@@ -21,7 +21,7 @@ class CreateLocationsTable extends Migration
             $table->string('postcode')->nullable();
             $table->double('latitude', 8, 6);
             $table->double('longitude', 8, 6);           
-            $table->enum('country', ['The Gambia', 'Senegal', 'Guinea-Bissau', 'Guinea','Niger','Benin','Burkina Faso','Liberia',"Cote D'Ivoire",'Togo','Mali','Nigeria','Sierra Leone','Ghana','Cabo Verde','Mauritania','Sao Tome and Principle','Gabon','Chad'])->default('The Gambia');            
+            $table->enum('country', ['The Gambia', 'Senegal', 'Guinea-Bissau', 'Guinea','Niger','Benin','Burkina Faso','Liberia','Ivory Coast','Togo','Mali','Nigeria','Sierra Leone','Ghana','Cape Verde','Mauritania','Sao Tome and Principle','Gabon','Chad'])->default('The Gambia');            
             $table->timestamps();
             
         });
